@@ -19,7 +19,6 @@ windows_task:
     - .\CI\Windows\build.bat
 
 ubuntu1604_task:
-  use_compute_credits: true
   container:
     dockerfile: CI/ubuntu1604.Dockerfile
   build_script: 
@@ -28,7 +27,6 @@ ubuntu1604_task:
     - ./CI/build.sh
 
 ubuntu1804_task:
-  use_compute_credits: true
   container:
     dockerfile: CI/ubuntu1804.Dockerfile
   build_script: 
@@ -37,7 +35,6 @@ ubuntu1804_task:
     - ./CI/build.sh
 
 ubuntu1904_task:
-  use_compute_credits: true
   container:
     dockerfile: CI/ubuntu1904.Dockerfile
   build_script: 
@@ -46,7 +43,6 @@ ubuntu1904_task:
     - ./CI/build.sh
 
 macos_task:
-    use_compute_credits: true
     osx_instance:
         image: mojave-xcode-10.2
         
